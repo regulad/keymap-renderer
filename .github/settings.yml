@@ -1,0 +1,21 @@
+# Repository configuration, managed by the Settings app
+# (https://github.com/repository-settings/app). The shared defaults come from
+# regulad/.github; this file sets only what is this repository's own.
+_extends: .github
+
+repository:
+  name: keymap-renderer
+  description: >-
+    Renders keyboard-layout-editor layouts annotated with each layer's keybinds
+    into Markdown and PDF references
+  homepage: ""
+  private: false
+  # Topics: comma-and-space separated string, NOT a YAML list.
+  topics: python, keyboard, keyboard-layout-editor, keybindings, keymap, pdf, neovim
+  default_branch: master
+
+# Dependabot's ecosystem label, applied to its pull requests.
+labels:
+  - name: "python:uv"
+    color: "2b67c6"
+    description: "Pull requests that update python:uv code"
