@@ -55,7 +55,7 @@ def find_key_for_selector(
         case "<S>":
             search_term = "Shift"
         case "<Space>":
-            return  # TODO
+            return  # TODO(#2)
         case "<Enter>":
             search_term = "Enter"
         case "<Tab>":
@@ -87,19 +87,19 @@ def find_key_for_selector(
         case "<NumLock>":
             search_term = "Num Lock"
         case "<NumDiv>":
-            return  # TODO
+            return  # TODO(#3)
         case "<NumMul>":
-            return  # TODO
+            return  # TODO(#3)
         case "<NumSub>":
-            return  # TODO
+            return  # TODO(#3)
         case "<NumAdd>":
-            return  # TODO
+            return  # TODO(#3)
         case "<NumEnter>":
-            return  # TODO
+            return  # TODO(#3)
         case "<NumDot>":
-            return  # TODO
+            return  # TODO(#3)
         case "<Num0>" | "<Num1>" | "<Num2>" | "<Num3>" | "<Num4>" | "<Num5>" | "<Num6>" | "<Num7>" | "<Num8>" | "<Num9>":
-            return  # TODO
+            return  # TODO(#3)
         case _:
             search_term = key_title.upper()
     for key in board.keys:
@@ -222,7 +222,7 @@ def main(
             # Desaturate keys not on the layer
             for unmodified_key in set(this_layer_keyboard.keys) - modified_keys:
                 unmodified_key.color = modify_color(unmodified_key.color)
-                # TODO: this is meant to make unactivated keys have their labels dimmed,
+                # TODO(#4): this is meant to make unactivated keys have their labels dimmed,
                 #       however it appears this array is borrowed and doesn't get copied right, mutating
                 #       one key appears to affect other keys.
                 # for i in range(0, 12):
